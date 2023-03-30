@@ -1,0 +1,9 @@
+prog1  start     0x10
+Again  LDA        #I2
+           +LDS           @value2
+             Addr  A,S 
+            JEQ   Again 
+           RSUB
+value2     word  1
+I2     word  5
+        End prog1

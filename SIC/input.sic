@@ -1,0 +1,8 @@
+prog1 start 0
+here LDA v1,x
+    sta init
+    jeq here
+    RSUB
+  v1  RESW 2
+  init word 3
+        end here
